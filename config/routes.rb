@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :social_networks, only: :index
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'social_networks#index'
 end

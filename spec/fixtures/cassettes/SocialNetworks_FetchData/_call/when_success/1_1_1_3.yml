@@ -1,0 +1,160 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://takehome.io/twitter
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.2.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - takehome.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 Mar 2023 13:51:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - dadb38bacc22ff34a049ca3286637682;o=1
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=YMM0HYf7BFTnCufgdxLw2nh7%2Ffzq4BlSbwc%2BZ53ILw85XLawtv86%2B2k%2F0yW7tYXkx796ocu3lAS%2FZdAeF9aqHaU4NVovyZNCFg%2FhVdquXG9rJwvGL9Gc7YbGGUbwRg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a8d78c27f7ca5e0-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"username":"@GuyEndoreKaiser","tweet":"If you live to be 100, you
+        should make up some fake reason why, just to mess with people... like claim
+        you ate a pinecone every single day."},{"username":"@mikeleffingwell","tweet":"STOP
+        TELLING ME YOUR NEWBORN''S WEIGHT AND LENGTH I DON''T KNOW WHAT TO DO WITH
+        THAT INFORMATION."}]'
+  recorded_at: Thu, 16 Mar 2023 13:51:35 GMT
+- request:
+    method: get
+    uri: https://takehome.io/facebook
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.2.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - takehome.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 Mar 2023 13:51:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - bcb93feb41f19577cb1d9c3f913a7fc7
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=t2Q2wxRY%2BA176nwdprMbwfLocXL1MSFwo0lmHhv6vv7uMSkk73qKxLPinD15%2FdcvfECfPvYvywubN7kZnk%2FltDZ8ac7Iv%2BmmNZ66tJfcgoEGlBsLra31UDusXOB6ew%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a8d78c4eea20195-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"name":"Some Friend","status":"Here''s some photos of my holiday.
+        Look how much more fun I''m having than you are!"},{"name":"Drama Pig","status":"I
+        am in a hospital. I will not tell you anything about why I am here."}]'
+  recorded_at: Thu, 16 Mar 2023 13:51:35 GMT
+- request:
+    method: get
+    uri: https://takehome.io/instagram
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.2.0p0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - takehome.io
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 16 Mar 2023 13:51:35 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Cloud-Trace-Context:
+      - a91f1081cd38e408a00addec13740a47
+      Via:
+      - 1.1 google
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7p8bxB%2FWGXkSk7X0U8%2Fg4bl00zQdgiJrxma0sIdtbk4BC%2BNFZShliV6UI8w4TzwatkrUu45cP6PudHv%2BV3UyOMXakZL5HTAj4Q3rBE5kH6sfeNVCJSJVzPs79MuquQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a8d78c76aeba6ca-GRU
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"username":"hipster1","picture":"food"},{"username":"hipster2","picture":"coffee"},{"username":"hipster3","picture":"coffee"},{"username":"hipster4","picture":"food"},{"username":"hipster5","picture":"this
+        one is of a cat"}]'
+  recorded_at: Thu, 16 Mar 2023 13:51:36 GMT
+recorded_with: VCR 6.1.0

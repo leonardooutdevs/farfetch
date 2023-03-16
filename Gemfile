@@ -5,10 +5,13 @@ ruby '3.2.0'
 
 gem 'bootsnap', require: false
 gem 'dotenv-rails'
+gem 'dry-monads'
+gem 'dry-transaction'
 gem 'health_check'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rails', '~> 7.0.4', '>= 7.0.4.2'
+gem 'rest-client'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
@@ -16,7 +19,6 @@ group :development, :test do
   # Debug
   gem 'pry-nav'
   gem 'pry-rails'
-  gem 'web-console'
 
   # Quality assurance
   gem 'brakeman'
@@ -36,6 +38,7 @@ end
 group :development do
   gem 'solargraph', require: false
   gem 'spring'
+  gem 'web-console'
 end
 
 group :test do
@@ -45,5 +48,6 @@ group :test do
   gem 'rspec-sidekiq'
   gem 'shoulda-matchers'
   gem 'simplecov', require: false
+  gem 'vcr'
   gem 'webmock'
 end
