@@ -1,0 +1,8 @@
+:verbose: false
+:concurrency: 3
+
+:timeout: 5
+:logfile: ./log/sidekiq.log
+
+:queues:
+  - default

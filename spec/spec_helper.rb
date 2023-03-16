@@ -19,8 +19,11 @@ unless ENV['NO_COVERAGE']
 
     add_group 'Controllers', 'app/controllers'
     add_group 'Models', 'app/models'
+    add_group 'Models', 'app/services'
 
-    add_filter '/graphql/'
-    add_filter '/controllers/graphql_controller.rb'
+    add_filter '/channels'
+    add_filter '/jobs'
+    add_filter '/mailers'
+    add_filter '/models'
   end
 end

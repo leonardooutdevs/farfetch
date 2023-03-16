@@ -51,4 +51,4 @@ RUN ["chmod", "+x", "bin/docker-entrypoint-web.sh"]
 
 # exec bundle exec rails server -p 80 -b 0.0.0.0
 
-CMD ["bundle", "exec", "rails", "server", "-p", "80", "-b", "0.0.0.0"]
+CMD ["bundle", "exec", "rails", "server", "-p", "3000", "-b", "0.0.0.0"]
