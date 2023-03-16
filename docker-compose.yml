@@ -1,0 +1,52 @@
+version: "3.0"
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - "./:/farfetch"
+
+  redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server
+    volumes:
+      - "./:/farfetch"
+
+  sidekiq:
+    depends_on:
+      - redis
+      - db
+    build: .
+    command: bundle exec sidekiq
+    volumes:
+      - "./:/farfetch"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST: db
+
+  farfetch:
+    build: .
+    command:
+      - /bin/sh
+      - -c
+      - |
+        rm -rf tmp/pids
+        bundle exec rake db:create db:migrate
+        bundle exec rails s -p 80 -b '0.0.0.0'
+    ports:
+      - "80:80"
+    depends_on:
+      - db
+      - sidekiq
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_HOST: db
+    volumes:
+      - "./:/farfetch"
