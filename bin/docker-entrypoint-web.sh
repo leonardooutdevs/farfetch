@@ -6,7 +6,7 @@ set -e
 rm -f /farfetch/tmp/pids/server.pid
 
 # Then exec the container's main process (what's set as CMD in the Dockerfile).
-exec bundle exec rails server -p 80 -b 0.0.0.0
+exec bundle exec rails server -p 3000 -b 0.0.0.0
 
 # Always keep this here as it ensures your latest built assets make their way
 # into your volume persisted public directory.
